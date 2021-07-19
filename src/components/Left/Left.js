@@ -44,28 +44,32 @@ export default function Left() {
             color='#C3C7CD'
             flex='0.5'
         >
-            <MotionText variants={itemVariants} mb='60' color='#D6A97E'>Running Shoe</MotionText>
-            <MotionHeading variants={itemVariants} as='h1' fontSize='60px' mb='40'>Nike React <br /> Miller 2</MotionHeading>
-            <MotionText variants={itemVariants} mb='40' fontSize='20'>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur.</MotionText>
+            <MotionText variants={itemVariants} mb='16' color='#D6A97E'>Running Shoe</MotionText>
+            <MotionHeading variants={itemVariants} as='h1' fontSize='60' mb='12'>Nike React <br /> Miller 2</MotionHeading>
+            <MotionText variants={itemVariants} mb='12' fontSize='20'>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur.</MotionText>
             <MotionButton 
                 variants={itemVariants} 
                 whileHover={{
                     scale:1.15,
                     boxShadow:'5px 5px 8px #344A6F',
+                    backgroundColor:'black'
                     
                 }}
                 whileTap={{
                     scale:0.9,
-                    backgroundColor:'#576C8F'
+                    backgroundColor:'#344A6F',
+                    
                 }}
+                variant="outline"
                 bgColor='#344A6F'
                 boderWidth='1px'
                 borderColor='#D6A97E'
-                h='60'
                 borderRadius='10px'
-                px='28'
+                px='12'
+                py='8'
+                size='lg'
                 fontSize='20'
-                color='#C3C7CD'
+                
             >
                 Buy Now
             </MotionButton>

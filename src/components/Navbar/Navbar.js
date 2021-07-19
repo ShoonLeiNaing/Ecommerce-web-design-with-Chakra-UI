@@ -44,29 +44,28 @@ export default function Navbar() {
         }
     }
     return (
-        <MotionBox variants={boxVariant} initial='initial' animate='visible' h='10rem' w='100%' py='1rem' >
+        <MotionBox variants={boxVariant} initial='initial' animate='visible' h='100%' w='100%' py='8'  >
             <Flex
                 color='#C3C7CD'
                 mx='10rem'
-                fontSize='25'
-                justify='center'
+                fontSize='24'  
             >
                 <Text>Hello</Text>
                 <Spacer />
                 <MotionText
                     variants={itemVariant}
                     whileHover='hover'
-                    mx='40'
+                    mx='12'
                 >Products</MotionText>
                 <MotionText
                     variants={itemVariant}
                     whileHover='hover'
-                    mx='40'
+                    mx='12'
                 >Pricing</MotionText>
                 <MotionText
                     variants={itemVariant}
                     whileHover='hover'
-                    mx='40'
+                    mx='12'
                 >About Us</MotionText>
                 <Spacer />
                 <Center >
@@ -76,9 +75,11 @@ export default function Navbar() {
                         whileTap='tap'
                         bgColor='#344A6F'
                         borderWidth='0'
-                        h='60'
+                        size='lg'
+                        px='8'
+                        py='7'
                         borderRadius='30px'
-                        px='28' color='#C3C7CD'
+                        color='#C3C7CD'
                         fontSize='20'
                     >
                         Sign Up
